@@ -1,0 +1,156 @@
+
+  header {
+    display: flex;
+    flex-wrap: row;
+    --ms-flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  .block-1 {
+    display: flex;
+    flex-wrap: row;
+    --ms-flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    z-index: 0;
+  }
+
+  .block-2 {
+    display: flex;
+    flex-wrap: row;
+    --ms-flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header .logo {
+    top: 0 ;
+    margin-bottom: 25%;
+  }
+
+  header h1 {
+    font-size: 5em;
+    justify-content: space-around;
+    word-break: break-all;
+    line-height: 10vh;
+  }
+
+  header a {
+    display: flex; 
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    width: 180px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background: #15573F;
+    color: #fff;
+    margin-top: 5%;
+    padding: 10px;
+    text-decoration: none;
+    left: 20px;
+  }  
+
+  header a:hover {
+    opacity: .8;
+  }
+
+  header a h3 {
+    position: relative;
+    display: flex; 
+    flex-direction: row;
+    text-align: center;
+    left: 15px;
+    top: 5px;
+  }
+
+  header a .material-icons {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    right: 2px;
+    top: 1px;
+  }
+
+ .logo-comp {
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    top: 10em;
+    visibility: visible;
+    z-index: 1;
+  } 
+
+  .logo-comp-mob {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    visibility: hidden;
+    z-index: 3;
+  } 
+
+
+  @media (min-width: 320px) and (max-width: 800px) {
+    header {
+      height: 90%;
+    }
+    .test {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      flex-direction: column;
+    } 
+    aside {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      flex-direction: column;
+      margin: 0;
+    }
+    .logo {
+      width: 80%;
+      top: 0;
+      align-content: center;
+    }
+    header .block-1 h1 {
+      line-height: 35px;
+      font-size: 2em;
+      line-break: normal;
+    }
+    .main-btn {
+      margin-top: 6vh;
+      margin-bottom: 3vh;
+    }
+    .logo-comp {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+      display: none;
+    }
+    .logo-comp-mob {
+      visibility: visible;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0;
+      top: 0;
+      z-index: 3;
+      width: 80%;
+    }
+
+  }
+  

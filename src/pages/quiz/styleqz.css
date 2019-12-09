@@ -1,0 +1,197 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+  
+.wrap .label {
+    background: transparent;
+    padding: 2px 15px;
+}
+    
+.wrap .top-left {
+    position: absolute;
+    transform: rotate(-90deg) scaleX(-1);
+    transform-origin: top left;
+}
+  
+.wrap .content {
+    transform: scaleX(-1);
+    display: flex;
+    margin: 80px 0 0 40px;
+    justify-content: space-around;
+}
+
+.wrap hr {
+    transform: scaleX(-1);
+    width: 380px;
+    content: '-';
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    margin-right: 40px;
+    border-top: 2px solid #15573F;
+}
+
+.container {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 750px;
+    margin: 15vh 30% 0% 30%;
+    border-top: 5px solid #15573F;
+    background-color: rgba(252, 240, 240, 0.8);
+    box-shadow: 10px 10px 0 0px rgba(0, 0, 0, .1);
+    user-select: none;
+}
+
+.container h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.options {
+    display: flex;
+    flex-direction: row wrap;
+    --ms-flex-wrap: row wrap;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    background: #ffffff;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin: 1%;
+    overflow: hidden;     
+}
+
+.light:hover {
+    background: #FD9872;
+    color: #fff;
+}
+
+.green:hover {
+    background: #7BAF9E;
+    color: #fff;
+}
+
+.pets:hover {
+    background: #FD9872;
+    color: #fff;
+}
+
+svg:hover {
+    opacity: #fff .9;
+}
+
+.cont-Navigation {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 5%;
+    width: 100%;
+}
+
+.prev-btn {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-right: 50%;
+}
+
+.next-btn {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+.container a {
+    display: flex; 
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    width: 180px;
+    border-radius: 100px;
+    border: 2px solid #15573F;
+    background: #fff;
+    outline: none;
+    color: #15573F;
+    margin-top: 1%;
+    padding: 10px;
+    text-decoration: none;
+    left: 20px;
+}  
+
+.container a:hover {
+    opacity: .8;
+    color: #fff;
+    background: #15573F;
+}
+
+.container a h3 {
+    position: relative;
+    display: flex; 
+    flex-direction: row;
+    text-align: center;
+    top: 5px;
+    left: 25px;
+  }
+
+.container .cont-Navigation a .material-icons {
+    color: #000000;
+    display: inline-block;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    font-size: 2em;
+    top: 1px;
+}
+
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .wrap .content {
+        margin: 0 0 0 80px;
+    }
+    .wrap hr { 
+        width: 380px;
+    }
+    .container {
+        max-width: 90%;
+        margin: 5vh 4% 0% 7%;
+    }
+    .game {
+        display: flex;
+        flex-direction: column;
+        --ms-flex-wrap: column;
+        justify-items: center;
+        align-content: center;
+        flex-flow: column;
+        justify-content: space-around;
+        max-width: 90%;
+        margin: 5vh 4% 0% 7%;
+    }
+    .cont-Navigation { 
+        display: flex;
+        flex-direction: column;
+        --ms-flex-wrap: column;
+        justify-items: center;
+        align-content: center;
+        flex-flow: column;
+        justify-content: space-around;
+        margin-left: 45%;
+    }
+}

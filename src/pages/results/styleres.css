@@ -1,0 +1,96 @@
+.pick-top {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.top-h1 {
+    font-size: 50px;
+    margin-bottom: 3%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.res {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 550px 550px 550px; 
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    max-width: 1550px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    flex-grow: wrap;
+    justify-items: center;
+    align-content: center;
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px ;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    border-bottom: 5px solid #435757;
+    box-shadow: 0 2px 2px #ccc;
+    background: #fff;
+    width: 350px;
+    padding: 20px;
+}
+
+.cards button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+    margin-bottom: 10%;
+}
+  
+.cards button {
+    display: inline;
+    padding: 15px 50px;
+    top: 0;
+    font-size: 25px;
+    border-radius: 100px;
+    border: 2px solid #15573F;
+    background: transparent;
+    color: #15573F;
+}
+  
+  button:hover {
+    background:  #15573F;
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .top-h1 {
+        font-size: 30px;
+        margin: auto;
+    }
+    .res {
+        display: flex;
+        flex-direction: column;
+        --ms-flex-wrap: column;
+        justify-items: center;
+        align-content: center;
+        flex-flow: column;
+        justify-content: space-around;
+        max-width: 98%;
+        margin: 5vh 4% 0% 7%;
+    }
+    .cards {
+        max-width: 90%;
+    }
+    .cards button {
+        font-size: 18px;
+    }
+
+}

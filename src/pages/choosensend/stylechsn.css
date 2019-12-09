@@ -1,0 +1,145 @@
+.send {
+    display: flex;
+    flex-direction: column;
+    flex-grow: row;
+    justify-items: center;
+    align-content: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 15vh 20% 0% 20%;
+    padding: 5% 1% 2% 2%;
+}
+
+.cards2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: row;
+    justify-items: center;
+    align-content: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    border-bottom: 5px solid #435757;
+    box-shadow: 0 2px 2px #ccc;
+    background: #fff;
+    width: 400px;
+    height: 480px;
+}
+
+.cards2 button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+    margin-bottom: 10%;
+}
+  
+.cards2 button {
+    display: inline;
+    padding: 15px 50px;
+    top: 0;
+    font-size: 25px;
+    border-radius: 100px;
+    border: 2px solid #15573F;
+    background: transparent;
+    color: #15573F;
+}
+  
+button:hover {
+    background:  #15573F;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.cards2 form {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 90%;   
+    margin-top: 5%;    
+}
+
+.cards2 input {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 2em;
+    border-radius: 100px;
+    border: none;
+    background: rgb(221, 221, 221);
+    outline: none;
+    color: black;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.cards2 input::placeholder {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.head {
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.head h1, h5 {
+    margin-bottom: 5%;
+}
+
+.picked-top {
+    justify-content: space-around;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.envelop {
+    justify-content: space-around;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .send {
+        display: flex;
+        flex-direction: column;
+        flex-grow: wrap;
+        justify-items: center;
+        align-content: center;
+        flex-flow: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 120px;
+        padding: 0;
+        width: 95%;
+        margin-left: 6%;
+        margin-top: 5vh;
+    }
+    .cards2 {
+        width: 95%;
+        margin-bottom: 4%;
+    }
+    .cards2 button {
+        font-size: 18px;
+    }
+
+}
