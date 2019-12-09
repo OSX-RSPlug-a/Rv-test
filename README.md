@@ -1,4 +1,4 @@
-# Rv-test
+# RV-test
 
 Projeto teste Quiz para escolha de planta;
 
